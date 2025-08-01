@@ -3,101 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../donations/donation.css">
+    <link rel="stylesheet" href="../payments/payment.css">
     <link rel="stylesheet" href="../../assets/styles/Styles.css">
-    
+    <title>Payment</title>
 </head>
 <body>
-      <header>
+        <header>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo"><img src="../../assets/images/logo.png"> MJL Foundation</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="../pages/about/About.html">About</a></li>
-        <li><a href="../pages/projects/Project.html">Projects</a></li>
-        <li><a href="../pages/blog/Blog.html">Blog</a></li>
-        <li><a href="../pages/get-involved/GetInvolved.html">Get Involved</a></li>
-        <li><a href="#">Contact</a></li>
+       <li><a href="#">Home</a></li>
+        <li><a href="../about/About.html">About</a></li>
+        <li><a href="../projects/Project.html">Projects</a></li>
+        <li><a href="../blog/Blog.html">Blog</a></li>
+        <li><a href="../get-involved/GetInvolved.html">Get Involved</a></li>
+        <li><a href="../contact/Contact.html">Contact</a></li>
       </ul>
       <a href="#" class="donate-btn"><i class="fas fa-heart"></i>  Donate</a>
     </nav>
 
 </header>
-     <section class="donation-section">
+
+
+    <section class="payment-section">
     <div class="container">
-      <h1>Make a Donation</h1>
-      <p class="description">
-        We sincerely hope that you will stay involved. Our mission continues because of your generosity
-      </p>
-      <div class="thanks-box">
-        Thank you for your donation. We couldn’t have done it without you
+      <h1>Select payment method</h1>
+
+      <!-- Payment Options -->
+      <div class="payment-options">
+        <button class="option active">Credit Card</button>
+        <button class="option">SEPA</button>
+        <button class="option">PayPal</button>
+        <button class="option">Mobile Money</button>
       </div>
 
-      <!-- Donation Amount -->
-      <div class="form-section">
-        <h3>Donation Amount</h3>
-        <div class="amount-buttons">
-          <button class="active">$15</button>
-          <button>$25</button>
-          <button>$50</button>
-          <button>$100</button>
-          <button>$250</button>
-          <button>$500</button>
-          <button>$1000</button>
-          <button>$5000</button>
-          <button>$25000</button>
-          <button>$50000</button>
-          <button>$100000</button>
-          <button>$ Other amount</button>
-        </div>
-      </div>
+      <!-- Form Title -->
+      <h4 class="form-title">ENTER PAYMENT DETAILS</h4>
 
-      <!-- Donation Frequency -->
-      <div class="form-section">
-        <h3>Donation Frequency</h3>
-        <div class="frequency-buttons">
-          <button class="active">One time</button>
-          <button>Monthly</button>
-        </div>
-        <label for="dedicate-to">I’d like to dedicate this donation to...</label>
-        <input type="text">
-      </div>
+      <!-- Payment Form -->
+      <div class="payment-form">
+        <form>
+          <div class="form-row">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+          </div>
 
-      <!-- Donor Information -->
-      <div class="form-section">
-        <h3>I am an</h3>
-        <div class="identity-buttons">
-          <button class="active">Individual</button>
-          <button>Organization</button>
-        </div>
-        <div class="input-row">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-        </div>
-        <div class="input-row">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Phone number">
-        </div>
-        <div class="address-block">
-          <input type="text" placeholder="Street">
-          <input type="text" placeholder="Suite">
-          <input type="text" placeholder="City">
-          <input type="text" placeholder="State/Province">
-        </div>
-        <label for="dedication-note">If you’d like to dedicate this donation, please leave a note here.</label>
-        <textarea rows="5" ></textarea>
-      </div>
+          <div class="form-row">
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" required>
+          </div>
 
-      <button class="submit-btn">Choose payment method</button>
+          <div class="form-row">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" required>
+          </div>
+
+          <div class="card-icons">
+            <img src="../../assets/images/masterCard.png" alt="Mastercard">
+            <img src="../../assets/images/maestro.png" alt="Amex">
+             <img src="../../assets/images/visa.png" alt="Visa">
+          </div>
+            <div class="form-row-double">
+          <div class="form-row">
+            <label for="expiry">Expiration Date:</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+          </div>
+
+          <div class="form-row">
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" required>
+          </div>
+          </div>
+          <button type="submit" class="donate-btn1">Donate Now</button>
+        </form>
+      </div>
     </div>
+
+    
   </section>
 
-
   
-<!-- footer  -->
- <footer class="site-footer">
+
+
+<footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <div  class="logo-footer"><img src="../../assets/images/logo.png"  alt="logo-image"/>MJL Foundation</div>
@@ -154,6 +143,8 @@
             <p>&copy; 2022 Save Poor - All Rights Reserved.</p>
         </div>
     </footer>
-    <Script src="donation.js"></Script>
+
+    
+ <script src="script.js"></script>
 </body>
 </html>
