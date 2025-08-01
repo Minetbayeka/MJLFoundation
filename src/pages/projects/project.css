@@ -179,7 +179,7 @@ display: flex;
     margin-top: 45px;
 }
 .card {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
