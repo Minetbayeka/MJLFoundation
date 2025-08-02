@@ -19,11 +19,9 @@
       <h1>Select payment method</h1>
 
       <!-- Payment Options -->
-      <div class="payment-options">
-        <button class="option active">Credit Card</button>
-        <button class="option">SEPA</button>
-        <button class="option">PayPal</button>
-        <button class="option">Mobile Money</button>
+           <div class="payment-options">
+            <!-- payment buttons -->
+           <div class="btn"></div>
       </div>
 
        <div class="form-wrapper">
@@ -33,25 +31,25 @@
     <form>
   <div class="form-row">
     <label>Email address:</label>
-    <input type="email" placeholder="Enter your email" />
+    <input type="email"  />
   </div>
 
   <div class="form-row">
     <label>Bank name:</label>
-    <input type="text" placeholder="Bank name" />
+    <input type="text"  />
   </div>
 
   <div class="form-row">
     <label>Account holder:</label>
-    <input type="text" placeholder="Account holder name" />
+    <input type="text"/>
   </div>
 
   <div class="form-row">
     <label>IBAN:</label>
-    <input type="text" placeholder="DE89 3704 0044 0532 0130 00" />
+    <input type="text"  />
   </div>
 
->
+
 
         <p class="disclaimer">
           By providing your payment information and confirming this payment, you authorise Stripe, our payment service provider, to send instructions to your bank to debit your account in accordance with those instructions.
@@ -72,8 +70,9 @@
        
     </footer>
 
-    
-
+<script src="../../components/buttonPayment.js"></script>    
+<script src="../../components/header.js"></script>
+<script src="../../components/footer.js"></script>
  <script src="script.js"></script>
 
 </body>
