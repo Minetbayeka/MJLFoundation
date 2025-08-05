@@ -38,12 +38,32 @@ body {
   font-size: 1.2rem;
 }
 
-.nav-links {
+/* .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+} */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.nav-center-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.nav-links .donate-btn {
+  margin-left: auto;
+}
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -62,17 +82,6 @@ body {
 /* Hero Section */
 
 
-/* .hero {
-  position: relative;
-  background-image: url('herosection.png');
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-} */
 
 .hero{
     position: relative;
@@ -114,7 +123,7 @@ body {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: #ffbfa0;
+  color: #444;
 }
 
 .hero h1 {
@@ -572,12 +581,6 @@ margin-top: 20px;
 }
 
 
-
-
-
-
-
-
 /* footer */
 .site-footer {
     background-color: var(--footer-bg-color);
@@ -720,6 +723,10 @@ margin-top: 20px;
         width: 100%; /* Make input full width */
         max-width: 300px; /* Add a max-width for better appearance */
     }
+
+    .border{
+        margin-left: 60px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -803,6 +810,7 @@ margin-top: 20px;
   font-weight:900;
   width: 200px;
   margin-bottom: 25px;
+
 }
 
 
@@ -870,5 +878,257 @@ left: 643px;
   color: white;
   font-weight: bold;
 }
+
+
+
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-content {
+    margin: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .learn-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  /* Vision Section */
+  .vission-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Mother Jane Cards */
+  .container {
+    justify-content: center;
+  }
+
+  .card-1 {
+    width: 90%;
+    height: auto;
+  }
+
+  /* About Us Section */
+  .container-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .text-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .base-img,
+  .overlay-img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .overlay-img {
+    border: none;
+    margin-top: 20px;
+  }
+
+  /* Meet the Visionary */
+  .meet-visionary {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .visionary-image {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Vission Image Text */
+  .visson-content {
+    position: static;
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  /* Mission and Goals */
+  .container-mission,
+  .container-goal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1 p {
+    margin-left: 0;
+  }
+
+  /* Donate Section */
+  .donate-content {
+    position: static;
+    margin: 2rem auto;
+  }
+
+  .donate-content h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .footer-newsletter p {
+    padding: 0 15px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .donate-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .vission p,
+  .mission .faith,
+  .title p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.desktop-donate {
+  display: inline-block;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: 30px;
+  }
+      .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-center-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links .donate-btn {
+    margin-left: 0;
+  }
+  /* .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #0c2a2d;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  } */
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .donate-btn {
+    margin: 1rem auto 0;
+    /* display: none; */
+    text-align: center;
+    overflow: hidden;
+  }
+
+   .nav-links.active.donate-btn{
+    display: inline-block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
